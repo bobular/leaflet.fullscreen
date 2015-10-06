@@ -63,11 +63,11 @@
                     fullScreenApi.cancelFullScreen(map._container.parentElement);
                 } else {
                     L.DomUtil.removeClass(map._container.parentElement, 'leaflet-pseudo-fullscreen');
-                    $("#sidebar").css({
-                        top: "123px",
-                        bottom: "50px"
-                    })
-                        .redraw();
+                    //$("#sidebar").css({
+                    //    top: "123px",
+                    //    bottom: "50px"
+                    //})
+                    //    .redraw();
                 }
                 map.invalidateSize();
                 map.fire('exitFullscreen');
@@ -79,11 +79,11 @@
                     fullScreenApi.requestFullScreen(map._container.parentElement);
                 } else {
                     L.DomUtil.addClass(map._container.parentElement, 'leaflet-pseudo-fullscreen');
-                    $("#sidebar").css({
-                        top: "13px",
-                        bottom: "10px"
-                    })
-                        .redraw();
+                    //$("#sidebar").css({
+                    //    top: "13px",
+                    //    bottom: "10px"
+                    //})
+                    //    .redraw();
                 }
                 map.invalidateSize();
                 map.fire('enterFullscreen');
